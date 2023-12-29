@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       routes : {
-				"/login":(context) => const LoginScreen()
+				"/login":(context) => LoginScreen()
 			},
 			initialRoute: "/login",
       theme: ThemeData(
