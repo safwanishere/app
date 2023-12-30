@@ -1,4 +1,7 @@
+import 'package:app/FirstScreen.dart';
 import 'package:app/LoginScreen.dart';
+import 'package:app/SecondScreen.dart';
+import 'package:app/StateList.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,9 +15,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       routes : {
-				"/login":(context) => LoginScreen()
+				"/login":(context) => LoginScreen(),
+        "/first":(context) => FirstScreen(),
+        "/second":(context) => SecondScreen(),
+        "/state":(context) => StateList()
 			},
-			initialRoute: "/login",
+			initialRoute: "/first",
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.greenAccent),
         useMaterial3: true,
