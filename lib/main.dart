@@ -1,7 +1,10 @@
+import 'package:app/AddTask.dart';
 import 'package:app/FirstScreen.dart';
 import 'package:app/LoginScreen.dart';
 import 'package:app/SecondScreen.dart';
 import 'package:app/StateList.dart';
+import 'package:app/splashScreen.dart';
+import 'package:app/todoList.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,9 +21,12 @@ class MyApp extends StatelessWidget {
 				"/login":(context) => LoginScreen(),
         "/first":(context) => FirstScreen(),
         "/second":(context) => SecondScreen(),
-        "/state":(context) => StateList()
+        "/state":(context) => StateList(),
+        "/splash":(context) => SplashScreen(),
+        "/todo":(context) => TodoList(),
+        "/addtask":(context) => AddTask()
 			},
-			initialRoute: "/first",
+			initialRoute: "/todo",
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.greenAccent),
         useMaterial3: true,
